@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
-
+<div id="header">
+    <p>Header</p>
+</div>
+<div id="main">
+    <div id="content">
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+    <div id="right_sidebar">
+        <p>Sidebar</p>
+        <p>Sidebar</p>
+        <p>Sidebar</p>
+        <p>Sidebar</p>
+        <p>Sidebar</p>
+    </div>
+</div>
+<div id="footer">
+    <p>Footer</p>
+</div>
+<script>
+    if (window.innerWidth < 700) {
+        $("#right_sidebar").css({"opacity": "0"})
+    }
+</script>
 </body>
 </html>
